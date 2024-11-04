@@ -1,0 +1,1138 @@
+Info :
+Archive Name: 1-dwy - _D(1).rar
+Extraction Date: 2024-09-26 18:59:39.000000000 +0700
+Archive Name: 1-dwy - _D.rar
+Extraction Date: 2024-09-26 20:35:45.000000000 +0700
+----------------------------------------------------
+Runtime : ID_1
+Unit Test XArrayList : -------------------------------------------------------
+array1 --------------- PASS
+array2 --------------- PASS
+array3 --------------- PASS
+array4 --------------- PASS
+array5 --------------- PASS
+array6 --------------- PASS
+array7 --------------- PASS
+array8 --------------- PASS
+array9 --------------- PASS
+array10 --------------- PASS
+array11 --------------- PASS
+array12 --------------- PASS
+array13 --------------- PASS
+array14 --------------- PASS
+array15 --------------- PASS
+array16 --------------- PASS
+array17 --------------- PASS
+array18 --------------- PASS
+array19 --------------- PASS
+array20 --------------- PASS
+array21 --------------- PASS
+array22 --------------- PASS
+array23 --------------- PASS
+array24 --------------- PASS
+array25 --------------- PASS
+array26 --------------- PASS
+array27 --------------- PASS
+array28 --------------- PASS
+array29 --------------- PASS
+array30 --------------- PASS
+array31 --------------- PASS
+array32 --------------- PASS
+array33 --------------- PASS
+array34 --------------- PASS
+array35 --------------- PASS
+Unit Test DLinkedList : -------------------------------------------------------
+linkedList01: Failed to Runtime
+
+=================================================================
+==7470==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x794c1eeb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x60c0e45c4360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x60c0e459bc0b in T_LinkedList::linkedList1() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x235c0b)
+    #3 0x60c0e454841d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x60c0e453af27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x60c0e453a42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x794c1de2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x794c1de2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x60c0e453a164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x794c1eeb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x60c0e45c41ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x60c0e459bc0b in T_LinkedList::linkedList1() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x235c0b)
+    #3 0x60c0e454841d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x60c0e453af27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x60c0e453a42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x794c1de2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x794c1de2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x60c0e453a164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList02: Failed to Runtime
+
+=================================================================
+==7474==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x704d942b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5e1314c85360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5e1314c5dce3 in T_LinkedList::linkedList2() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x236ce3)
+    #3 0x5e1314c0941d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5e1314bfbf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5e1314bfb42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x704d9322a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x704d9322a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5e1314bfb164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x704d942b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5e1314c851ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5e1314c5dce3 in T_LinkedList::linkedList2() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x236ce3)
+    #3 0x5e1314c0941d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5e1314bfbf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5e1314bfb42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x704d9322a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x704d9322a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5e1314bfb164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList03: Failed to Runtime
+
+=================================================================
+==7478==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x765497ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56416f2e6360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x56416f2bfe91 in T_LinkedList::linkedList3() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x237e91)
+    #3 0x56416f26a41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56416f25cf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56416f25c42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x765496a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x765496a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56416f25c164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x765497ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56416f2e61ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x56416f2bfe91 in T_LinkedList::linkedList3() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x237e91)
+    #3 0x56416f26a41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56416f25cf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56416f25c42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x765496a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x765496a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56416f25c164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList04: Failed to Runtime
+
+=================================================================
+==7482==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7f150f6b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x60ac90335360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x60ac9031081d in T_LinkedList::linkedList4() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23981d)
+    #3 0x60ac902b941d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x60ac902abf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x60ac902ab42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7f150e62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7f150e62a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x60ac902ab164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7f150f6b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x60ac903351ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x60ac9031081d in T_LinkedList::linkedList4() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23981d)
+    #3 0x60ac902b941d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x60ac902abf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x60ac902ab42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7f150e62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7f150e62a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x60ac902ab164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList05: Failed to Runtime
+
+=================================================================
+==7486==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x733f760b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x60c714197360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x60c714173801 in T_LinkedList::linkedList5() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23a801)
+    #3 0x60c71411b41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x60c71410df27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x60c71410d42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x733f7502a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x733f7502a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x60c71410d164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x733f760b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x60c7141971ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x60c714173801 in T_LinkedList::linkedList5() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23a801)
+    #3 0x60c71411b41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x60c71410df27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x60c71410d42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x733f7502a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x733f7502a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x60c71410d164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList06: Failed to Runtime
+
+=================================================================
+==7490==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x71bab8ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56865ed49360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x56865ed26d95 in T_LinkedList::linkedList6() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23bd95)
+    #3 0x56865eccd41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56865ecbff27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56865ecbf42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x71bab7a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x71bab7a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56865ecbf164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x71bab8ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56865ed491ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x56865ed26d95 in T_LinkedList::linkedList6() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23bd95)
+    #3 0x56865eccd41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56865ecbff27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56865ecbf42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x71bab7a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x71bab7a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56865ecbf164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList07: Failed to Runtime
+
+=================================================================
+==7494==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x79e11a2b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a5027ed7360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5a5027eb5bfd in T_LinkedList::linkedList7() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23cbfd)
+    #3 0x5a5027e5b41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a5027e4df27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a5027e4d42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x79e11922a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x79e11922a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a5027e4d164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x79e11a2b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a5027ed71ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5a5027eb5bfd in T_LinkedList::linkedList7() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23cbfd)
+    #3 0x5a5027e5b41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a5027e4df27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a5027e4d42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x79e11922a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x79e11922a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a5027e4d164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList08: Failed to Runtime
+
+=================================================================
+==7498==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7d59396b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56f262f1c360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x56f262efbce5 in T_LinkedList::linkedList8() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23dce5)
+    #3 0x56f262ea041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56f262e92f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56f262e9242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7d593862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7d593862a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56f262e92164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7d59396b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56f262f1c1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x56f262efbce5 in T_LinkedList::linkedList8() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23dce5)
+    #3 0x56f262ea041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56f262e92f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56f262e9242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7d593862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7d593862a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56f262e92164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList09: Failed to Runtime
+
+=================================================================
+==7503==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7b0bd42b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a8666783360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5a8666763b49 in T_LinkedList::linkedList9() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23eb49)
+    #3 0x5a866670741d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a86666f9f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a86666f942b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b0bd322a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b0bd322a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a86666f9164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7b0bd42b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a86667831ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5a8666763b49 in T_LinkedList::linkedList9() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23eb49)
+    #3 0x5a866670741d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a86666f9f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a86666f942b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b0bd322a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b0bd322a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a86666f9164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList10: Failed to Runtime
+
+=================================================================
+==7507==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x70393fab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x6495fa10b360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x6495fa0ecc53 in T_LinkedList::linkedList10() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23fc53)
+    #3 0x6495fa08f41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x6495fa081f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x6495fa08142b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x70393ea2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x70393ea2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x6495fa081164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x70393fab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x6495fa10b1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x6495fa0ecc53 in T_LinkedList::linkedList10() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x23fc53)
+    #3 0x6495fa08f41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x6495fa081f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x6495fa08142b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x70393ea2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x70393ea2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x6495fa081164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList11: Failed to Runtime
+
+=================================================================
+==7511==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7f8d61eb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a612e344360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5a612e326ecd in T_LinkedList::linkedList11() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x240ecd)
+    #3 0x5a612e2c841d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a612e2baf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a612e2ba42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7f8d60e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7f8d60e2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a612e2ba164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7f8d61eb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a612e3441ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5a612e326ecd in T_LinkedList::linkedList11() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x240ecd)
+    #3 0x5a612e2c841d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a612e2baf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a612e2ba42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7f8d60e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7f8d60e2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a612e2ba164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList12: Failed to Runtime
+
+=================================================================
+==7515==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7c049f4b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x620de06d6360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x620de06ba4a5 in T_LinkedList::linkedList12() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2424a5)
+    #3 0x620de065a41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x620de064cf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x620de064c42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7c049e42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7c049e42a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x620de064c164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7c049f4b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x620de06d61ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x620de06ba4a5 in T_LinkedList::linkedList12() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2424a5)
+    #3 0x620de065a41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x620de064cf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x620de064c42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7c049e42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7c049e42a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x620de064c164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList13: Failed to Runtime
+
+=================================================================
+==7519==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x771f118b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x625b8de81360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x625b8de66a2d in T_LinkedList::linkedList13() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x243a2d)
+    #3 0x625b8de0541d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x625b8ddf7f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x625b8ddf742b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x771f1082a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x771f1082a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x625b8ddf7164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x771f118b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x625b8de811ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x625b8de66a2d in T_LinkedList::linkedList13() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x243a2d)
+    #3 0x625b8de0541d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x625b8ddf7f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x625b8ddf742b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x771f1082a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x771f1082a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x625b8ddf7164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList14: Failed to Runtime
+
+=================================================================
+==7523==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x724e446b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5e27de131360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5e27de117fb5 in T_LinkedList::linkedList14() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x244fb5)
+    #3 0x5e27de0b541d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5e27de0a7f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5e27de0a742b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x724e4362a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x724e4362a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5e27de0a7164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x724e446b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5e27de1311ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5e27de117fb5 in T_LinkedList::linkedList14() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x244fb5)
+    #3 0x5e27de0b541d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5e27de0a7f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5e27de0a742b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x724e4362a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x724e4362a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5e27de0a7164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList15: Failed to Runtime
+
+=================================================================
+==7527==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7798fceb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5e1c2470e360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5e1c246f67a5 in T_LinkedList::linkedList15() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2467a5)
+    #3 0x5e1c2469241d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5e1c24684f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5e1c2468442b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7798fbe2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7798fbe2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5e1c24684164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7798fceb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5e1c2470e1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5e1c246f67a5 in T_LinkedList::linkedList15() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2467a5)
+    #3 0x5e1c2469241d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5e1c24684f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5e1c2468442b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7798fbe2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7798fbe2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5e1c24684164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList16: Failed to Runtime
+
+=================================================================
+==7533==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7409230b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5eaef602c360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5eaef6015f95 in T_LinkedList::linkedList16() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x247f95)
+    #3 0x5eaef5fb041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5eaef5fa2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5eaef5fa242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x74092202a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x74092202a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5eaef5fa2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7409230b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5eaef602c1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5eaef6015f95 in T_LinkedList::linkedList16() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x247f95)
+    #3 0x5eaef5fb041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5eaef5fa2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5eaef5fa242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x74092202a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x74092202a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5eaef5fa2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList17: Failed to Runtime
+
+=================================================================
+==7537==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x732c06cb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x55e5c206c360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x55e5c2057761 in T_LinkedList::linkedList17() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x249761)
+    #3 0x55e5c1ff041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x55e5c1fe2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x55e5c1fe242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x732c05c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x732c05c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x55e5c1fe2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x732c06cb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x55e5c206c1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x55e5c2057761 in T_LinkedList::linkedList17() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x249761)
+    #3 0x55e5c1ff041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x55e5c1fe2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x55e5c1fe242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x732c05c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x732c05c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x55e5c1fe2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList18: Failed to Runtime
+
+=================================================================
+==7541==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7b64302b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x6053fc61d360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x6053fc609f3f in T_LinkedList::linkedList18() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24af3f)
+    #3 0x6053fc5a141d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x6053fc593f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x6053fc59342b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b642f22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b642f22a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x6053fc593164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7b64302b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x6053fc61d1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x6053fc609f3f in T_LinkedList::linkedList18() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24af3f)
+    #3 0x6053fc5a141d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x6053fc593f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x6053fc59342b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b642f22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b642f22a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x6053fc593164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList19: Failed to Runtime
+
+=================================================================
+==7545==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x719d5d0b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x55fcc6ed3360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x55fcc6ec0da3 in T_LinkedList::linkedList19() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24bda3)
+    #3 0x55fcc6e5741d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x55fcc6e49f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x55fcc6e4942b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x719d5c02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x719d5c02a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x55fcc6e49164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x719d5d0b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x55fcc6ed31ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x55fcc6ec0da3 in T_LinkedList::linkedList19() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24bda3)
+    #3 0x55fcc6e5741d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x55fcc6e49f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x55fcc6e4942b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x719d5c02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x719d5c02a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x55fcc6e49164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList20: Failed to Runtime
+
+=================================================================
+==7549==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x76f0922b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56a3bb7ce360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x56a3bb7bcec3 in T_LinkedList::linkedList20() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24cec3)
+    #3 0x56a3bb75241d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56a3bb744f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56a3bb74442b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x76f09122a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x76f09122a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56a3bb744164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x76f0922b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x56a3bb7ce1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x56a3bb7bcec3 in T_LinkedList::linkedList20() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24cec3)
+    #3 0x56a3bb75241d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x56a3bb744f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x56a3bb74442b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x76f09122a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x76f09122a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x56a3bb744164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList21: Failed to Runtime
+
+=================================================================
+==7553==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x73259dab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x62af71b47360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x62af71b375db in T_LinkedList::linkedList21() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24e5db)
+    #3 0x62af71acb41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x62af71abdf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x62af71abd42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x73259ca2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x73259ca2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x62af71abd164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x73259dab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x62af71b471ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x62af71b375db in T_LinkedList::linkedList21() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24e5db)
+    #3 0x62af71acb41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x62af71abdf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x62af71abd42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x73259ca2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x73259ca2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x62af71abd164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList22: Failed to Runtime
+
+=================================================================
+==7557==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7210d9cb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5ec4461a6360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x5ec4461973ff in T_LinkedList::linkedList22() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24f3ff)
+    #3 0x5ec44612a41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5ec44611cf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5ec44611c42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7210d8c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7210d8c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5ec44611c164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7210d9cb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5ec4461a61ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x5ec4461973ff in T_LinkedList::linkedList22() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x24f3ff)
+    #3 0x5ec44612a41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5ec44611cf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5ec44611c42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7210d8c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7210d8c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5ec44611c164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList23: Failed to Runtime
+
+=================================================================
+==7561==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7436b90b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x64b3c4c4c360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x64b3c4c3e223 in T_LinkedList::linkedList23() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x250223)
+    #3 0x64b3c4bd041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x64b3c4bc2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x64b3c4bc242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7436b802a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7436b802a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x64b3c4bc2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7436b90b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x64b3c4c4c1ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x64b3c4c3e223 in T_LinkedList::linkedList23() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x250223)
+    #3 0x64b3c4bd041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x64b3c4bc2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x64b3c4bc242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7436b802a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7436b802a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x64b3c4bc2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList24: Failed to Runtime
+
+=================================================================
+==7565==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7d7d3cab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x6330c3b19360 in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e360)
+    #2 0x6330c3b0bfa5 in T_LinkedList::linkedList24() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x250fa5)
+    #3 0x6330c3a9d41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x6330c3a8ff27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x6330c3a8f42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7d7d3ba2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7d7d3ba2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x6330c3a8f164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7d7d3cab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x6330c3b191ed in DLinkedList<int>::DLinkedList(void (*)(DLinkedList<int>*), bool (*)(int&, int&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25e1ed)
+    #2 0x6330c3b0bfa5 in T_LinkedList::linkedList24() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x250fa5)
+    #3 0x6330c3a9d41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x6330c3a8ff27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x6330c3a8f42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7d7d3ba2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7d7d3ba2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x6330c3a8f164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList25: Failed to Runtime
+
+=================================================================
+==7569==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7d0866ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5dda31fcc6de in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2676de)
+    #2 0x5dda31fb6d33 in T_LinkedList::linkedList25() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x251d33)
+    #3 0x5dda31f4741d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5dda31f39f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5dda31f3942b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7d0865a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7d0865a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5dda31f39164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7d0866ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5dda31fcc56b in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26756b)
+    #2 0x5dda31fb6d33 in T_LinkedList::linkedList25() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x251d33)
+    #3 0x5dda31f4741d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5dda31f39f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5dda31f3942b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7d0865a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7d0865a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5dda31f39164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 64 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList26: Failed to Runtime
+
+=================================================================
+==7573==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7b3bdeab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x643b94e856de in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2676de)
+    #2 0x643b94e70805 in T_LinkedList::linkedList26() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x252805)
+    #3 0x643b94e0041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x643b94df2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x643b94df242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b3bdda2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b3bdda2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x643b94df2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7b3bdeab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x643b94e8556b in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26756b)
+    #2 0x643b94e70805 in T_LinkedList::linkedList26() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x252805)
+    #3 0x643b94e0041d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x643b94df2f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x643b94df242b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b3bdda2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b3bdda2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x643b94df2164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 64 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList27: Failed to Runtime
+
+=================================================================
+==7577==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x796808eb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x643ec548b6de in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2676de)
+    #2 0x643ec54772f1 in T_LinkedList::linkedList27() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2532f1)
+    #3 0x643ec540641d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x643ec53f8f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x643ec53f842b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x796807e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x796807e2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x643ec53f8164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x796808eb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x643ec548b56b in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26756b)
+    #2 0x643ec54772f1 in T_LinkedList::linkedList27() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2532f1)
+    #3 0x643ec540641d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x643ec53f8f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x643ec53f842b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x796807e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x796807e2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x643ec53f8164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 64 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList28: Failed to Runtime
+
+=================================================================
+==7581==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7c5eb9cb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x62c39535f6de in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2676de)
+    #2 0x62c39534c057 in T_LinkedList::linkedList28() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x254057)
+    #3 0x62c3952da41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x62c3952ccf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x62c3952cc42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7c5eb8c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7c5eb8c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x62c3952cc164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7c5eb9cb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x62c39535f56b in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26756b)
+    #2 0x62c39534c057 in T_LinkedList::linkedList28() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x254057)
+    #3 0x62c3952da41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x62c3952ccf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x62c3952cc42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7c5eb8c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7c5eb8c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x62c3952cc164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 64 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList29: Failed to Runtime
+
+=================================================================
+==7585==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x76d4f04b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5bb1a34e86de in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2676de)
+    #2 0x5bb1a34d5dbd in T_LinkedList::linkedList29() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x254dbd)
+    #3 0x5bb1a346341d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5bb1a3455f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5bb1a345542b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x76d4ef42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x76d4ef42a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5bb1a3455164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x76d4f04b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5bb1a34e856b in DLinkedList<Point>::DLinkedList(void (*)(DLinkedList<Point>*), bool (*)(Point&, Point&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26756b)
+    #2 0x5bb1a34d5dbd in T_LinkedList::linkedList29() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x254dbd)
+    #3 0x5bb1a346341d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5bb1a3455f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5bb1a345542b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x76d4ef42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x76d4ef42a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5bb1a3455164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 64 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList30: Failed to Runtime
+
+=================================================================
+==7589==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 12 byte(s) in 1 object(s) allocated from:
+    #0 0x7466b2ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a029d8a7be7 in T_LinkedList::linkedList30() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x255be7)
+    #2 0x5a029d83441d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #3 0x5a029d826f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #4 0x5a029d82642b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #5 0x7466b1a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x7466b1a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x5a029d826164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Direct leak of 12 byte(s) in 1 object(s) allocated from:
+    #0 0x7466b2ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a029d8a7e3b in T_LinkedList::linkedList30() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x255e3b)
+    #2 0x5a029d83441d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #3 0x5a029d826f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #4 0x5a029d82642b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #5 0x7466b1a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x7466b1a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x5a029d826164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Direct leak of 12 byte(s) in 1 object(s) allocated from:
+    #0 0x7466b2ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a029d8a7d11 in T_LinkedList::linkedList30() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x255d11)
+    #2 0x5a029d83441d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #3 0x5a029d826f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #4 0x5a029d82642b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #5 0x7466b1a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x7466b1a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x5a029d826164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7466b2ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a029d8be118 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26c118)
+    #2 0x5a029d8a7b24 in T_LinkedList::linkedList30() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x255b24)
+    #3 0x5a029d83441d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a029d826f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a029d82642b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7466b1a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7466b1a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a029d826164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7466b2ab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a029d8bdfa5 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26bfa5)
+    #2 0x5a029d8a7b24 in T_LinkedList::linkedList30() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x255b24)
+    #3 0x5a029d83441d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a029d826f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a029d82642b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7466b1a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7466b1a2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a029d826164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 84 byte(s) leaked in 5 allocation(s).
+------------------------------------------------
+linkedList31: Failed to Runtime
+
+=================================================================
+==7593==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x781a6e2b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x578f3b738118 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26c118)
+    #2 0x578f3b722710 in T_LinkedList::linkedList31() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x256710)
+    #3 0x578f3b6ae41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x578f3b6a0f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x578f3b6a042b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x781a6d22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x781a6d22a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x578f3b6a0164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x781a6e2b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x578f3b737fa5 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26bfa5)
+    #2 0x578f3b722710 in T_LinkedList::linkedList31() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x256710)
+    #3 0x578f3b6ae41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x578f3b6a0f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x578f3b6a042b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x781a6d22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x781a6d22a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x578f3b6a0164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList32: Failed to Runtime
+
+=================================================================
+==7597==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 12 byte(s) in 1 object(s) allocated from:
+    #0 0x79135c6b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x63f9c4a2f6f3 in T_LinkedList::linkedList32() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2576f3)
+    #2 0x63f9c49ba41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #3 0x63f9c49acf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #4 0x63f9c49ac42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #5 0x79135b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x79135b62a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x63f9c49ac164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Direct leak of 12 byte(s) in 1 object(s) allocated from:
+    #0 0x79135c6b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x63f9c4a2f5c9 in T_LinkedList::linkedList32() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2575c9)
+    #2 0x63f9c49ba41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #3 0x63f9c49acf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #4 0x63f9c49ac42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #5 0x79135b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x79135b62a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x63f9c49ac164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x79135c6b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x63f9c4a44118 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26c118)
+    #2 0x63f9c4a2f3dc in T_LinkedList::linkedList32() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2573dc)
+    #3 0x63f9c49ba41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x63f9c49acf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x63f9c49ac42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x79135b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x79135b62a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x63f9c49ac164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x79135c6b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x63f9c4a43fa5 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26bfa5)
+    #2 0x63f9c4a2f3dc in T_LinkedList::linkedList32() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x2573dc)
+    #3 0x63f9c49ba41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x63f9c49acf27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x63f9c49ac42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x79135b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x79135b62a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x63f9c49ac164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 72 byte(s) leaked in 4 allocation(s).
+------------------------------------------------
+linkedList33: Failed to Runtime
+
+=================================================================
+==7601==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x73b4dceb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x55eeec0b6118 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26c118)
+    #2 0x55eeec0a227a in T_LinkedList::linkedList33() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25827a)
+    #3 0x55eeec02c41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x55eeec01ef27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x55eeec01e42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x73b4dbe2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x73b4dbe2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x55eeec01e164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x73b4dceb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x55eeec0b5fa5 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26bfa5)
+    #2 0x55eeec0a227a in T_LinkedList::linkedList33() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25827a)
+    #3 0x55eeec02c41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x55eeec01ef27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x55eeec01e42b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x73b4dbe2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x73b4dbe2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x55eeec01e164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList34: Failed to Runtime
+
+=================================================================
+==7605==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7a449eab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a24f9d8b118 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26c118)
+    #2 0x5a24f9d78698 in T_LinkedList::linkedList34() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x259698)
+    #3 0x5a24f9d0141d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a24f9cf3f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a24f9cf342b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7a449da2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7a449da2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a24f9cf3164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7a449eab5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5a24f9d8afa5 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26bfa5)
+    #2 0x5a24f9d78698 in T_LinkedList::linkedList34() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x259698)
+    #3 0x5a24f9d0141d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5a24f9cf3f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5a24f9cf342b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7a449da2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7a449da2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a24f9cf3164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList35: Failed to Runtime
+
+=================================================================
+==7609==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x749aaeeb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x652bad010118 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26c118)
+    #2 0x652bacffeb74 in T_LinkedList::linkedList35() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25ab74)
+    #3 0x652bacf8641d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x652bacf78f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x652bacf7842b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x749aade2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x749aade2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x652bacf78164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x749aaeeb5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x652bad00ffa5 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26bfa5)
+    #2 0x652bacffeb74 in T_LinkedList::linkedList35() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25ab74)
+    #3 0x652bacf8641d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x652bacf78f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x652bacf7842b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x749aade2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x749aade2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x652bacf78164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------
+linkedList36: Failed to Runtime
+
+=================================================================
+==7613==ERROR: LeakSanitizer: detected memory leaks
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7b5e048b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5caaeade8118 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26c118)
+    #2 0x5caaeadd7f92 in T_LinkedList::linkedList36() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25bf92)
+    #3 0x5caaead5e41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5caaead50f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5caaead5042b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b5e0382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b5e0382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5caaead50164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7b5e048b5827 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:99
+    #1 0x5caaeade7fa5 in DLinkedList<Point*>::DLinkedList(void (*)(DLinkedList<Point*>*), bool (*)(Point*&, Point*&)) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x26bfa5)
+    #2 0x5caaeadd7f92 in T_LinkedList::linkedList36() (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x25bf92)
+    #3 0x5caaead5e41d in T_LinkedList::runTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1e241d)
+    #4 0x5caaead50f27 in handleTestUnitLinkedList(int, char**) (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4f27)
+    #5 0x5caaead5042b in main (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d442b)
+    #6 0x7b5e0382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x7b5e0382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5caaead50164 in _start (/home/don/Code/Course/DSA/tool/Task1-BTL1/main+0x1d4164)
+
+SUMMARY: AddressSanitizer: 48 byte(s) leaked in 2 allocation(s).
+------------------------------------------------

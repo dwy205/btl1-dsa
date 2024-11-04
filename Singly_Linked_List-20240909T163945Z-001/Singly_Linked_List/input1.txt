@@ -1,0 +1,29 @@
+Insertion 9 0
+Get 0
+IndexOf 9
+IndexOf 0
+Contains 9
+Contains 7
+Insertion 8 0
+Insertion 7 0
+Insertion 6 0
+Insertion 5 0
+Insertion 4 0
+Get 5
+IndexOf 4
+IndexOf 0
+Contains 4
+Contains 7
+Insertion 3 0
+Insertion 2 0
+Insertion 1 0
+Insertion 0 0
+Get 0
+Deletion 8
+Get 8
+Get 6
+Get 7
+IndexOf 8
+IndexOf 0
+Contains 9
+Contains 10

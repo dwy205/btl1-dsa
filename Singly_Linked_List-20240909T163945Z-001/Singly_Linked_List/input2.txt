@@ -1,0 +1,21 @@
+SelecetionSort
+Insertion 6 0
+Insertion 1 0
+Insertion 5 0
+Insertion 2 3
+Reverse
+Insertion 3 4
+Insertion 4 3
+SelecetionSort
+Insertion 7 0
+Insertion 8 3
+Insertion 9 4
+Insertion 0 0
+SelecetionSort
+SubLinklist 0 9
+SubLinklist 0 5
+SubLinklist 1 7
+SubLinklist 2 8
+SubLinklist 0 1
+SubLinklist 2 2
+Reverse

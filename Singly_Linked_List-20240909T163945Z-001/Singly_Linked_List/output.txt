@@ -1,0 +1,72 @@
+PS C:\CODE\DSA\LinkList> cd Singly_Linked_List
+PS C:\CODE\DSA\LinkList\Singly_Linked_List> g++ -o main main.cpp Singly_Linked_List.cpp -I.-std=c++11
+PS C:\CODE\DSA\LinkList\Singly_Linked_List> ./main input.txt
+input.txt
+row 1: [Size=1,DataHead=1,DataTail=1,DataNode: 1->nullptr]
+row 2: [Size=2,DataHead=2,DataTail=1,DataNode: 2->1->nullptr]
+row 3: [Size=3,DataHead=2,DataTail=3,DataNode: 2->1->3->nullptr]
+row 4: [Size=4,DataHead=2,DataTail=4,DataNode: 2->1->3->4->nullptr]
+row 5: [Size=5,DataHead=2,DataTail=5,DataNode: 2->1->3->4->5->nullptr]
+row 6: [Size=6,DataHead=2,DataTail=5,DataNode: 2->1->3->6->4->5->nullptr]
+row 7: [Size=7,DataHead=2,DataTail=5,DataNode: 2->1->3->6->7->4->5->nullptr]
+row 8: [Size=8,DataHead=2,DataTail=5,DataNode: 2->1->8->3->6->7->4->5->nullptr]
+row 9: [Size=9,DataHead=9,DataTail=5,DataNode: 9->2->1->8->3->6->7->4->5->nullptr]
+row 10: [Size=10,DataHead=9,DataTail=10,DataNode: 9->2->1->8->3->6->7->4->5->10->nullptr]
+row 11: [Size=9,DataHead=2,DataTail=10,DataNode: 2->1->8->3->6->7->4->5->10->nullptr]
+row 12: [Size=8,DataHead=2,DataTail=5,DataNode: 2->1->8->3->6->7->4->5->nullptr]
+row 13: [Size=7,DataHead=1,DataTail=5,DataNode: 1->8->3->6->7->4->5->nullptr]
+row 14: [Size=6,DataHead=1,DataTail=4,DataNode: 1->8->3->6->7->4->nullptr]
+row 15: [Size=5,DataHead=1,DataTail=4,DataNode: 1->8->3->7->4->nullptr]
+row 16: [Size=4,DataHead=1,DataTail=4,DataNode: 1->8->3->4->nullptr]
+row 17: [Size=3,DataHead=1,DataTail=4,DataNode: 1->8->4->nullptr]
+row 18: [Size=2,DataHead=8,DataTail=4,DataNode: 8->4->nullptr]
+row 19: [Size=1,DataHead=8,DataTail=8,DataNode: 8->nullptr]
+row 20: [Size=0,DataHead=nullptr,DataTail=nullptr,DataNode: nullptr]
+PS C:\CODE\DSA\LinkList\Singly_Linked_List> ./main input1.txt
+input1.txt
+row 1: [Size=1,DataHead=9,DataTail=9,DataNode: 9->nullptr]
+row 2: Data Node 0: 9
+row 3: Index Of Data 9: 0
+row 4: Index Of Data 0: -1
+row 5: Contains data 9: true
+row 6: Contains data 7: flase
+row 7: [Size=2,DataHead=8,DataTail=9,DataNode: 8->9->nullptr]
+row 8: [Size=3,DataHead=7,DataTail=9,DataNode: 7->8->9->nullptr]
+row 9: [Size=4,DataHead=6,DataTail=9,DataNode: 6->7->8->9->nullptr]
+row 10: [Size=5,DataHead=5,DataTail=9,DataNode: 5->6->7->8->9->nullptr]
+row 11: [Size=6,DataHead=4,DataTail=9,DataNode: 4->5->6->7->8->9->nullptr]
+row 12: Data Node 5: 9
+row 13: Index Of Data 4: 0
+row 14: Index Of Data 0: -1
+row 15: Contains data 4: true
+row 16: Contains data 7: true
+row 17: [Size=7,DataHead=3,DataTail=9,DataNode: 3->4->5->6->7->8->9->nullptr]
+row 18: [Size=8,DataHead=2,DataTail=9,DataNode: 2->3->4->5->6->7->8->9->nullptr]
+row 19: [Size=9,DataHead=1,DataTail=9,DataNode: 1->2->3->4->5->6->7->8->9->nullptr]
+row 20: [Size=10,DataHead=0,DataTail=9,DataNode: 0->1->2->3->4->5->6->7->8->9->nullptr]
+row 21: Data Node 0: 0
+row 22: [Size=9,DataHead=0,DataTail=9,DataNode: 0->1->2->3->4->5->6->7->9->nullptr]
+row 23: Data Node 8: 9
+row 24: Data Node 6: 6
+row 25: Data Node 7: 7
+row 26: Index Of Data 8: -1
+row 27: Index Of Data 0: 0
+row 28: Contains data 9: true
+row 29: Contains data 10: flase
+PS C:\CODE\DSA\LinkList\Singly_Linked_List> ./main input2.txt
+input2.txt
+row 1: [Size=0,DataHead=nullptr,DataTail=nullptr,DataNode: nullptr]
+row 2: [Size=1,DataHead=6,DataTail=6,DataNode: 6->nullptr]
+row 3: [Size=2,DataHead=1,DataTail=6,DataNode: 1->6->nullptr]
+row 4: [Size=3,DataHead=5,DataTail=6,DataNode: 5->1->6->nullptr]
+row 5: [Size=4,DataHead=5,DataTail=2,DataNode: 5->1->6->2->nullptr]
+row 6: [Size=4,DataHead=2,DataTail=5,DataNode: 2->6->1->5->nullptr]
+row 7: [Size=5,DataHead=2,DataTail=3,DataNode: 2->6->1->5->3->nullptr]
+row 8: [Size=6,DataHead=2,DataTail=3,DataNode: 2->6->1->4->5->3->nullptr]
+row 9: [Size=6,DataHead=1,DataTail=6,DataNode: 1->2->3->4->5->6->nullptr]
+row 10: [Size=7,DataHead=7,DataTail=6,DataNode: 7->1->2->3->4->5->6->nullptr]
+row 11: [Size=8,DataHead=7,DataTail=6,DataNode: 7->1->2->8->3->4->5->6->nullptr]
+row 12: [Size=9,DataHead=7,DataTail=6,DataNode: 7->1->2->8->9->3->4->5->6->nullptr]
+row 13: [Size=10,DataHead=0,DataTail=6,DataNode: 0->7->1->2->8->9->3->4->5->6->nullptr]
+row 14: [Size=10,DataHead=0,DataTail=9,DataNode: 0->1->2->3->4->5->6->7->8->9->nullptr]
+row 21: [Size=10,DataHead=9,DataTail=0,DataNode: 9->8->7->6->5->4->3->2->1->0->nullptr]

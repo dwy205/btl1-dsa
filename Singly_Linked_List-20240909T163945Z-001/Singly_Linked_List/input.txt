@@ -1,0 +1,20 @@
+Insertion 1 0
+Insertion 2 0
+Insertion 3 2
+Insertion 4 3
+Insertion 5 4
+Insertion 6 3
+Insertion 7 4
+Insertion 8 2
+Insertion 9 0
+Insertion 10 9
+Deletion 0
+Deletion 8
+Deletion 0
+Deletion 6
+Deletion 3
+Deletion 3
+Deletion 2
+Deletion 0
+Deletion 1
+Deletion 0
